@@ -1,0 +1,144 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    user-select: none;
+    transition: all 0.5s ease-in-out;
+    padding: 0 50px;
+    height: 70px;
+    font-size: 14px;
+}
+.logoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drawer{
+    display: none;
+}
+.navbarElements {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.navItem{
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+}
+.navItem::after{
+    content: "";
+    background-color: rgb(6, 147, 227);
+    height: 1px;
+    position: absolute;
+    width: 0%;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+.navItem:hover:after{
+    width: 100%;
+}
+.navItem::before{
+    counter-increment: item;
+    content: "0" counter(item) ". ";
+    color: rgb(6, 147, 227);
+    font-size: 1.1rem;
+}
+
+.toggleButton {
+    height: 16px;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.toggleButton:focus {
+    outline: none;
+}
+
+.toggleButtonLine {
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+    width: 100%;
+    height: 2.5px;
+    border-radius: 1px;
+    background-color: white;
+}
+
+.cross {
+    background-color: white;
+}
+
+.cross:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-transform-origin: 10% 10%;
+	-ms-transform-origin: 10% 10%;
+	transform-origin: 10% 10%;
+}
+
+.cross:nth-child(2){
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.cross:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-transform-origin: 10% 90%;
+	-ms-transform-origin: 10% 90%;
+	transform-origin: 10% 90%;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        font-size: calc(10px + 0.15vw);
+        padding: 0 0 0 40px;
+    }
+    .drawer{
+        display: flex;
+        align-items: center;
+    }
+    .navbarElements{
+        flex-direction: column !important;
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: #56667A;
+        width: 340px;
+        height: 100vh;
+        justify-content: center;
+
+    }
+    .navItem{
+        padding: 10px 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .navItemSlide{
+        transform: translateX(50%) !important;
+    }
+    .sideBarHide{
+        transform: translateX(100%);
+    }
+    .navItem::after{
+        display: none;
+    }
+
+}
