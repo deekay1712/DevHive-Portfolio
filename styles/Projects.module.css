@@ -1,0 +1,71 @@
+.projectsWrapper{
+    background-color: rgb(18, 14, 38);
+    display: flex;
+    flex-direction: column;
+    padding: 6vw 12vw;
+    color: rgb(163, 168, 195);
+    font-size: 1.4rem;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+.project{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 1.75rem;
+    border-radius: 12px;
+    background-color: rgb(26, 19, 54);
+    box-shadow: rgb(2 12 27 / 70%) 0px 10px 30px -10px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.project:hover{
+    transform: translateY(-3px);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.project:hover .projectTitle{
+    color: rgb(6, 147, 227)
+}
+.projectTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.projectFolderIcon{
+    width: 40px;
+    height: 40px;
+}
+.projectLinksIcon{
+    width: 20px;
+    height: 20px;
+    margin: 5px 10px;
+}
+.projectDescription{
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    font-size: 17px;
+}
+.projectTitle{
+    margin: 0px 0px 10px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+.projectFooter{
+    margin: 20px 0px 0px;
+   
+}
+.projectLanguage{
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
