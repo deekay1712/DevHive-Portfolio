@@ -1,0 +1,92 @@
+.aboutWrapper {
+    min-height: calc(100vh - 70px);
+    background-color: rgb(18, 14, 38);
+    display: flex;
+    flex-direction: column;
+    padding: 6vw 12vw;
+    color: rgb(163, 168, 195);
+    font-size: 1.4rem;
+}
+
+.markdownWrapper {
+    font-size: 1.4rem;
+    text-align: left;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.markdownWrapper img{
+    max-width: 100%;
+}
+
+.markdownWrapper h1, .markdownWrapper h2, .markdownWrapper h3, .markdownWrapper p {
+    text-align: left;
+}
+
+.markdownWrapper h1, .markdownWrapper h2, .markdownWrapper h3 {
+    font-size: 2.4rem;
+    margin: 0 0 2rem 0;
+}
+
+.markdownWrapper p {
+    color: rgb(163, 168, 195);
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+}
+
+.markdownWrapper p a {
+    font-size: 1.6rem;
+}
+
+.markdownWrapper a {
+    color: rgb(6, 147, 227);
+    font-size: 1.4rem;
+    transition: all 0.3s ease 0s;
+}
+
+.markdownWrapper a:hover {
+    text-decoration: underline;
+}
+
+.markdownWrapper ul, .markdownWrapper ol {
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.markdownWrapper ul li, .markdownWrapper ol li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 20px;
+}
+
+.markdownWrapper ul li img, .markdownWrapper ol li img {
+    display: flex;
+    margin: 0.5rem;
+}
+
+.markdownWrapper ul li:before, .markdownWrapper ol li:before {
+  content: '▹';
+  position: absolute;
+  top: 5px;
+  left: 0;
+  color: rgb(6, 147, 227);
+  font-size: 1.2rem;
+}
+
+.markdownWrapper hr{
+  display: none;
+}
+
+.markdownWrapper strong{
+  margin: 20px 0 10px 0;
+}
+
+.markdownWrapper p > strong{
+  display:inline-block;
+}
+
+
