@@ -1,0 +1,10 @@
+.footerWrapper{
+    background-color: rgb(18, 14, 38);
+    padding: 6vw 0 0 0;
+}
+.footerText{
+    color: rgb(163, 168, 195);
+    font-size: 1.5rem;
+    padding: 10px;
+    text-align: center;
+}
