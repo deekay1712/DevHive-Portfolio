@@ -85,19 +85,52 @@ body {
   overflow-x: hidden;
 }
 
+html{
+  font-size: 62.5%;
+  line-height: 1.5;
+  counter-reset: section;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #120e26;
+  counter-reset: item;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.heading{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 2.2rem);
+  font-weight: 600;
+  white-space: nowrap;
+  color: #ffffff;
+}
+.heading::before{
+  counter-increment: section;
+  content: "0" counter(section) ".";
+  margin-right: 1rem;
+  color: rgb(6, 147, 227);
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  font-weight: 400;
+}
+.heading::after{
+  content: "";
+  display: block;
+  position: relative;
+  top: 0px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: rgba(6, 147, 227, 0.4);
 }
 
 @media (prefers-color-scheme: dark) {
