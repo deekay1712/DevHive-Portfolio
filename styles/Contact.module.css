@@ -5,15 +5,6 @@
     flex-direction: column;
     align-items: center;
 }
-.contactTitle{
-    margin: 10px 0px 20px;
-    width: 100%;
-    white-space: nowrap;
-    color: rgb(6, 147, 227);
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-align: center;
-}
 .contactSubtitle{
     font-size: clamp(40px, 5vw, 2.6rem);
     font-weight: 600;

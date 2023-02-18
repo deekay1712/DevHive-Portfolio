@@ -121,6 +121,7 @@ a {
   color: rgb(6, 147, 227);
   font-size: clamp(1.4rem, 3vw, 1.8rem);
   font-weight: 400;
+  font-family: 'Space Mono', monospace;
 }
 .heading::after{
   content: "";
@@ -131,6 +132,23 @@ a {
   height: 1px;
   margin-left: 20px;
   background-color: rgba(6, 147, 227, 0.4);
+}
+.contactHeading{
+  margin: 10px 0px 20px;
+  width: 100%;
+  white-space: nowrap;
+  color: rgb(6, 147, 227);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.contactHeading::before{
+  counter-increment: section;
+  content: "0" counter(section) ".";
+  margin-right: 1rem;
+  color: rgb(6, 147, 227);
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
 @media (prefers-color-scheme: dark) {
