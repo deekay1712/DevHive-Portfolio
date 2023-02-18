@@ -26,8 +26,8 @@ export default function Home({userData}) {
       </Head>
       <Navbar userData={userData} />
       <LandingPage userData={userData} />
-      <About readmeContent={userData.readme} />
-      <Projects repos={userData.repos} />
+      {userData.readme && <About readmeContent={userData.readme} />}
+      {userData.repos.length!==0 && <Projects repos={userData.repos} />}
       <Contact isOpenForNewOpportunities={userData.isOpenForNewOpportunities} email={userData.email} />
       <Footer name={userData.name}/>
     </>
