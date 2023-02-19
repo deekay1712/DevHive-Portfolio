@@ -11,7 +11,7 @@ export default function Footer({name}) {
     return (
         <div className={`${styles.footerWrapper} ${spaceMono.className}`}>
             <p className={styles.footerText}>© {year} {name}</p>
-            <p className={styles.footerText}>Powered by <a href='/'>Devsite</a></p>
+            <p className={styles.footerText}>Powered by <a href='https://www.devhive.me/' target="_blank">DevHive</a></p>
         </div>
     )
 }
