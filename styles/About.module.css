@@ -90,6 +90,8 @@
 @media (max-width: 768px) {
     .aboutWrapper{
         padding: 6vw 6vw;
+    }
+    .markdownWrapper{
         display: flex;
         flex-direction: column;
     }
