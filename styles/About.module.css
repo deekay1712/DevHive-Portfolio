@@ -11,8 +11,6 @@
 .markdownWrapper {
     font-size: 1.4rem;
     text-align: left;
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .markdownWrapper img{
@@ -92,5 +90,7 @@
 @media (max-width: 768px) {
     .aboutWrapper{
         padding: 6vw 6vw;
+        display: flex;
+        flex-direction: column;
     }
 }
