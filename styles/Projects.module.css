@@ -59,13 +59,21 @@
     margin: 0px 0px 10px;
     font-size: 2.2rem;
     font-weight: 400;
+    word-wrap: break-word;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
 }
 .projectFooter{
     margin: 20px 0px 0px;
-   
+    display: flex;
+    flex-wrap: wrap;
 }
 .projectLanguage{
     margin-right: 15px;
     font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .projectsWrapper{
+        padding: 6vw 6vw;
+    }
 }

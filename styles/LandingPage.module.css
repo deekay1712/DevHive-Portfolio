@@ -95,3 +95,9 @@
         height: 150px;
     }
 }
+
+@media (max-width: 768px){
+    .landingPageWrapper{
+        padding: 3vw 6vw;
+    }
+}

@@ -89,4 +89,8 @@
   display:inline-block;
 }
 
-
+@media (max-width: 768px) {
+    .aboutWrapper{
+        padding: 6vw 6vw;
+    }
+}

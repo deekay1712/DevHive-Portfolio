@@ -28,3 +28,9 @@
 .contactButton:hover{
     background-color: rgba(6, 147, 227, 0.1);
 }
+
+@media (max-width: 768px) {
+    .contactWrapper{
+        padding: 6vw 6vw;
+    }
+}
