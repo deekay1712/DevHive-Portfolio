@@ -19,7 +19,7 @@ export default function Navbar({userData}) {
             <ul className={`${styles.navbarElements} ${isOpen? '' : styles.sideBarHide}`}>
                 {userData.readme && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#about'>About</a></li>}
                 {userData.repos.length!==0 && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#projects'>Projects</a></li>}
-                <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#contact'>Conatct</a></li>
+                <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#contact'>Contact</a></li>
             </ul>
             <div className={styles.drawer}>
                 <button className={styles.toggleButton} onClick={toggle}>
