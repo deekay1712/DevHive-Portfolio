@@ -13,7 +13,7 @@ const roboto = Roboto({
 
 export default function Projects({repos}) {
   return (
-    <div className={`${styles.projectsWrapper} ${roboto.className}`}>
+    <div id='projects' className={`${styles.projectsWrapper} ${roboto.className}`}>
       <div className='headingWrapper'>
         <h1 className='heading'>Some Projects I&#39;ve Built</h1>
       </div>

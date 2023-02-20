@@ -17,9 +17,9 @@ export default function Navbar({userData}) {
                 <a href={userData.github_url}>{userData.username}</a>
             </div>
             <ul className={`${styles.navbarElements} ${isOpen? '' : styles.sideBarHide}`}>
-                {userData.readme && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a>About</a></li>}
-                {userData.repos.length!==0 && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a>Projects</a></li>}
-                <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a>Conatct</a></li>
+                {userData.readme && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='about'>About</a></li>}
+                {userData.repos.length!==0 && <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#projects'>Projects</a></li>}
+                <li onClick = {toggle} className={`${styles.navItem} ${isOpen? '' : styles.navItemSlide}`}><a href='#contact'>Conatct</a></li>
             </ul>
             <div className={styles.drawer}>
                 <button className={styles.toggleButton} onClick={toggle}>

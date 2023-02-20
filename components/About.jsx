@@ -18,7 +18,7 @@ const roboto = Roboto({
 
 export default function About({readmeContent}) {
   return (
-    <div className={`${styles.aboutWrapper} ${roboto.className}`}>
+    <div id='about' className={`${styles.aboutWrapper} ${roboto.className}`}>
         <div className='headingWrapper'>
             <h1 className='heading'>About Me</h1>
         </div>

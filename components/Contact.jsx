@@ -13,7 +13,7 @@ const spaceMono = Space_Mono({
 
 export default function Contact({isOpenForNewOpportunities, email}) {
     return (
-        <div className={`${styles.contactWrapper} ${roboto.className}`}>
+        <div id='contact' className={`${styles.contactWrapper} ${roboto.className}`}>
             <h1 className={`contactHeading ${spaceMono.className}`}>What's Next?</h1>
             <h2 className={styles.contactSubtitle}>Get In Touch</h2>
             {isOpenForNewOpportunities ? 
