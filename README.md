@@ -1,38 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Logo](https://user-images.githubusercontent.com/80641727/220139285-34c75609-5b8d-4a2a-9386-6d8f2b178040.jpg)
 
-## Getting Started
+### Generate Your Developer Portfolio in Minutes
 
-First, run the development server:
+>DevHive is a web application that allows developers to create and deploy a professional portfolio website in minutes with just their GitHub account. The application fetches all relevant data from the user's GitHub profile, including their best projects sorted by stars count, and generates a customizable portfolio website that is mobile-friendly and high-performing.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+🌐 [Open Website](https://devhive.me)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to use 👨‍💻
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Go to the [DevHive](https://www.devhive.me/) website.
+2. Login with your Github account.
+3. Wait for the application to fetch your data and generate your portfolio.
+4. Customize your portfolio by changing your name, email, and bio. You can delete and change the order of your projects.
+5. Preview your changes in real-time.
+6. Click the "Deploy on Vercel" button to deploy your portfolio. Thsi will open the Vercel.
+7. Choose your preferred Git provider to save your portfolio project.
+8. Choose a project name.
+9. Enter your GitHub username in the GITHUB_USERNAME value.
+10. Deploy your portfolio website. 🚀
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+Built by [DeeKay](https://www.linkedin.com/in/deekay1712/)
